@@ -1,66 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Roadtrip Planner</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <header>
-    <div class="header-inner">
-      <span class="logo">🗺️ Roadtrip Planner</span>
-      <button id="clear-btn" class="btn btn-danger">Limpar tudo</button>
-    </div>
-  </header>
-
-  <main>
-    <section class="card add-stop">
-      <h2>Adicionar parada</h2>
-      <form id="stop-form">
-        <div class="form-row">
-          <div class="field">
-            <label for="stop-name">Local *</label>
-            <input type="text" id="stop-name" placeholder="Ex: Rio de Janeiro" required />
-          </div>
-          <div class="field">
-            <label for="stop-date">Data</label>
-            <input type="date" id="stop-date" />
-          </div>
-          <div class="field">
-            <label for="stop-nights">Noites</label>
-            <input type="number" id="stop-nights" min="0" placeholder="0" />
-          </div>
-        </div>
-        <div class="field">
-          <label for="stop-notes">Notas</label>
-          <textarea id="stop-notes" rows="2" placeholder="Dicas, atrações, hotel..."></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Adicionar parada</button>
-      </form>
-    </section>
-
-    <section class="card trip-summary" id="summary-section">
-      <div class="summary-stats">
-        <div class="stat">
-          <span class="stat-value" id="stat-stops">0</span>
-          <span class="stat-label">Paradas</span>
-        </div>
-        <div class="stat">
-          <span class="stat-value" id="stat-nights">0</span>
-          <span class="stat-label">Noites</span>
-        </div>
-      </div>
-    </section>
-
-    <section id="stops-container">
-      <div id="empty-state" class="empty-state">
-        <p>Nenhuma parada adicionada ainda.<br />Comece planejando sua viagem acima!</p>
-      </div>
-      <ol id="stops-list"></ol>
-    </section>
-  </main>
-
-  <script src="app.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RoadTrip Planner AI</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
